@@ -1,0 +1,117 @@
+.leaflet-container {
+    width: 100vw; 
+    height: 100vh;
+}
+
+.leaflet-popup-content-wrapper{
+    margin-left: 50px;
+
+    width: 500px;
+}
+
+.container{
+    padding: 5px 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+
+    border: 1px solid rgb(196, 196, 196);
+    padding: 20px;
+    border-radius: 20px !important;
+    width: 550px;
+
+}
+
+.card-edit{
+    border: 1px solid rgb(196, 196, 196);
+    padding: 20px;
+    border-radius: 20px !important;
+    width: 400px;
+
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.label{
+    padding-right: 10px;
+    font-size: 16px;  
+    font-weight: 500;
+
+}
+
+.btn-cancel{
+    background-color: rgb(199, 178, 178);  
+    margin: 10px;
+    cursor: pointer;
+
+    border: none;   
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+
+.btn-save{
+    background-color: rgb(147, 247, 147);
+    margin: 10px;
+    border: none;
+    padding: 6px 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.logo{
+    width: auto;
+    height: auto;
+    max-width: 80px;
+}
+
+.center{
+    text-align: center;
+    
+}
+
+.btn-show{
+    background-color: rgb(147, 215, 247);
+    margin: 10px;
+    border: none;
+    padding: 6px 10px;
+    font-weight: bold;
+
+}
+
+.btn-edit{
+    background-color: rgb(199, 178, 178);
+    margin: 10px;
+    border: none;
+    padding: 6px 10px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+input, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+.details{
+    margin-left: 15px;
+}
+
+p{
+    font-size: 18px;
+    padding: 2px;
+}
