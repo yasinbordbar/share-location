@@ -6,7 +6,8 @@ Demo is available [here](share-location.vercel.app).
 
 ## Screenshots
 
-![App Screenshot](./public/screenshot.png)
+<img src="./public/screenshot.png" alt="drawing" width="500"/>
+
 
 ## Run Locally
 
