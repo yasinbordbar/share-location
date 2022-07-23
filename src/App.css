@@ -1,3 +1,8 @@
+.map-container{
+    width: 100% !important;
+    height: 280px !important;
+}
+
 .leaflet-container {
     width: 100vw; 
     height: 100vh;
@@ -10,20 +15,17 @@
 }
 
 .container{
-    padding: 5px 480px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .card{
-
     border: 1px solid rgb(196, 196, 196);
-    padding: 20px;
+    padding: 30px 50px;
     border-radius: 20px !important;
-    width: 550px;
-
+    width: auto;
 }
 
 .card-edit{
@@ -35,7 +37,7 @@
 }
 
 .title{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     text-align: center;
 }
@@ -47,19 +49,9 @@
 
 }
 
-.btn-cancel{
-    background-color: rgb(199, 178, 178);  
-    margin: 10px;
-    cursor: pointer;
-
-    border: none;   
-    padding: 6px 10px;
-    font-weight: bold;
-}
-
-
 .btn-save{
-    background-color: rgb(147, 247, 147);
+    background-color: #5FD068;
+    color: white;
     margin: 10px;
     border: none;
     padding: 6px 10px;
@@ -80,7 +72,8 @@
 }
 
 .btn-show{
-    background-color: rgb(147, 215, 247);
+    background-color: #4CACBC;
+    color: white;
     margin: 10px;
     border: none;
     padding: 6px 10px;
@@ -89,7 +82,8 @@
 }
 
 .btn-edit{
-    background-color: rgb(199, 178, 178);
+    background-color: #003865;
+    color: white;
     margin: 10px;
     border: none;
     padding: 6px 10px;
@@ -115,3 +109,11 @@ p{
     font-size: 18px;
     padding: 2px;
 }
+
+button{
+    border-radius: 5px;
+    padding: 8px 15px !important;
+    font-size: 17px;
+    cursor: pointer;
+}
+

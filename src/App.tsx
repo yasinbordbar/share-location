@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
-import AddLocationForm from "./component/AddLocationForm";
 import FullMap from "./component/FullMap";
-import { LocationContext } from "./context/location_context";
+import { LocationContext } from "./context/location.context";
+import Title from "./component/mini-component/Title";
+import ShowMapButton from "./component/mini-component/button/ShowMapButton";
+import LocationForm from "./component/LocationForm";
 
 function App() {
-  const [all_locations, setAllLocations] = useState<any[]>([]);
-
-  const [show_full_map, setShowFullMap] = useState(true);
+  const [allLocations, setAllLocations] = useState<any[]>([]);
+  const [showFullMap, setShowFullMap] = useState(false);
 
   return (
-    <LocationContext.Provider value={[all_locations, setAllLocations]}>
+    <LocationContext.Provider value={[allLocations, setAllLocations]}>
       <ToastContainer
         position="top-center"
         autoClose={2000}
@@ -24,23 +25,13 @@ function App() {
         pauseOnHover
       />
 
-      <div>
-        <p className="title">Share location</p>
-        <div className="container">
-          <AddLocationForm />
-        </div>
-
-        <div className="center">
-          <button
-            className="btn-show"
-            onClick={() => setShowFullMap(!show_full_map)}
-          >
-            {show_full_map ? "Hide map" : "Full map"}
-          </button>
-        </div>
-
-        {show_full_map ? <FullMap /> : null}
-      </div>
+      <Title text="Share location" />
+      <LocationForm formType="Add" />
+      <ShowMapButton
+        showFullMap={showFullMap}
+        setShowFullMap={setShowFullMap}
+      />
+      {showFullMap && <FullMap />}
     </LocationContext.Provider>
   );
 }
