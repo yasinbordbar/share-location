@@ -2,7 +2,7 @@
 A Web app which users can add new places to the universal map
 
 ## Demo
-Demo is available [here](share-location.vercel.app).
+Demo is available [here](https://share-location.vercel.app/).
 
 ## Screenshots
 
